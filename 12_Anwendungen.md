@@ -355,3 +355,6 @@ Für die Analyse des Erfolgs der Lehrveranstaltung bitten wir Sie um Ihr Feedbac
 > Vielen Dank für Ihre Mitarbeit am Fragebogen!
 
 > Vielen Dank für Ihre Beteiligung während der Übungen und der Vorlesungen!
+
+# Quiz
+> In diesem Programm sind zwei Fehler versteckt. Überlegen Sie sich wo sich die Fehler befinden und wie man sie korrigieren kann. Danach können Sie in den Hinweisen die Lösung nachsehen.

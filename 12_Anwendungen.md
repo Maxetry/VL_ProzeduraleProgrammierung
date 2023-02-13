@@ -357,4 +357,30 @@ Für die Analyse des Erfolgs der Lehrveranstaltung bitten wir Sie um Ihr Feedbac
 > Vielen Dank für Ihre Beteiligung während der Übungen und der Vorlesungen!
 
 # Quiz
-> In diesem Programm sind zwei Fehler versteckt. Überlegen Sie sich wo sich die Fehler befinden und wie man sie korrigieren kann. Danach können Sie in den Hinweisen die Lösung nachsehen.
+## Aufgabe 1
+> In diesem Programm, in dem der Durchschnitt von Zahlen bestimmt werden soll, sind zwei Fehler versteckt. Überlegen Sie sich wo sich die Fehler befinden und wie man sie korrigieren kann. Die Lösung ist nachfolgend angegeben.
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int arr[5] = {10, 20, 30, 40, 57};
+    int sum = 0;
+    int n = sizeof(arr) / sizeof(arr[0]);
+    
+    for (int i = 0; i <= n; i++) { 
+        sum += arr[i];
+    }
+    
+    int avg = sum / n;
+    cout << "The average is: " << avg << endl; 
+    
+    return 0;
+}
+```
+
+### Lösung
+> Fehler 1: Die `for`-Schleife iteriert über mehr Elemente als das Array tatsächlich beinhaltet. Eine Möglichkeit zur Lösung wäre: `i <= n` durch `i < n` zu ersetzen.
+
+> Fehler 2: Zur Berechnung des Durchschnitts werden zwei integers dividiert. Weiterhin ist `avg` ein integer. Dies kann zu Ungenauigkeiten führen. Eine bessere Variante wäre: `float avg = float(sum) / float(n);`
